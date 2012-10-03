@@ -1,6 +1,6 @@
 #Minecraft Server Stats
 
-A python script that will show the server stats from an server.log file.
+A python script that will show the server stats from a server.log file.
 
 ## Sample output
 
