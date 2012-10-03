@@ -158,26 +158,26 @@ class Minecraft:
 	 		else:
 	 			string += str(value)+' years, '
  			time = (time%31556926)
-			if time >= 86400:
-				value = int(math.floor(time/86400))
-				if value == 1:
-					string += str(value)+' day, '
-				else:
-					string += str(value)+' days, '
-				time = (time%86400)
-			if time >= 3600:
-				value = int(math.floor(time/3600))
-				if value == 1:
-					string += str(value)+' hour, '
-				else:
-					string += str(value)+' hours, '
-				time = (time%3600)
-			if time >= 60:
-				value = int(math.floor(time/60))
-				if value == 1:
-					string += str(value)+' minute, '
-				else:
-					string += str(value)+' minutes, '
+		if time >= 86400:
+			value = int(math.floor(time/86400))
+			if value == 1:
+				string += str(value)+' day, '
+			else:
+				string += str(value)+' days, '
+			time = (time%86400)
+		if time >= 3600:
+			value = int(math.floor(time/3600))
+			if value == 1:
+				string += str(value)+' hour, '
+			else:
+				string += str(value)+' hours, '
+			time = (time%3600)
+		if time >= 60:
+			value = int(math.floor(time/60))
+			if value == 1:
+				string += str(value)+' minute, '
+			else:
+				string += str(value)+' minutes, '
 			time = (time%60)
 
 		return string+str(time)+' seconds'
